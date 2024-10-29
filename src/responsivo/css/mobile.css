@@ -1,0 +1,261 @@
+/* CONTAINER GERAL DO SITE */
+.container-main {
+  padding: 0px 2rem;
+  margin: 0px 150rem 0px 0px;
+  min-width: 100vw;
+  display: block;
+}
+/* INICIO NAVBAR  */
+
+.logos {
+  display: none;
+}
+
+nav .icon-team {
+  display: none;
+}
+
+.social-media {
+  display: none;
+}
+
+nav {
+  justify-content: end;
+  margin-top: 2rem;
+}
+/* FIM NAVBAR */
+
+/* INICIO NAVBAR HAMBURGUER */
+.option {
+  font-family: var(--font-textos);
+  font-weight: 600;
+
+  font-size: 0.8rem;
+  transition: all 0.4s ease-in-out;
+  color: var(--white);
+  cursor: pointer;
+  min-width: 100%;
+  margin-top: 5px;
+}
+
+.option:hover {
+  color: var(--primaria);
+}
+
+.menu {
+  min-width: 100%;
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: block;
+  background-color: var(--black);
+  transform: translateX(380px);
+  transition: transform 0.6s ease-in-out;
+}
+
+.menu .options-mobile {
+  list-style: none;
+}
+
+.menu .options-mobile a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.mobileMenu {
+  width: 10%;
+  flex-direction: column;
+  display: block;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.mobileMenu .icon {
+  font-size: 20px;
+  color: var(--white);
+}
+
+/* FIM NAVBAR HAMBURGUER */
+
+/* INICIO SECAO CARROSEL */
+.carrossel {
+  position: relative;
+  min-width: 20rem;
+  margin-top: 9rem;
+  max-width: 25rem;
+  max-height: 30rem;
+
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides img {
+  min-width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+  min-height: 100%; /* A imagem ocupará 100% da altura do contêiner */
+  object-fit: cover; /* A imagem cobrirá completamente o contêiner, mantendo a proporção */
+  display: block; /* Remove espaços em branco indesejados */
+}
+
+.button {
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+/* FIM CARROSEl */
+
+/* /* INICIO SOBRE LINE   */
+.sobre-line {
+  margin-top: 20%;
+  gap: 10px;
+}
+.sobre-line h2 {
+  font-size: 1.3rem;
+}
+.sobre-line p {
+  font-size: 1.2rem;
+}
+/* FIM SOBRE LINE */
+
+/* INICIO INTEGRANTES */
+.integrantes {
+  margin-top: 20%;
+}
+.integrantes h2 {
+  font-size: 1.3rem;
+}
+.card {
+  flex-direction: column;
+}
+.card .foto-integrante img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+}
+.sobre-integrante {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+.card .sobre-integrante h3 {
+  font-size: 1.2rem;
+}
+.card .sobre-integrante p {
+  font-size: 1.1rem;
+  min-width: 100%;
+}
+
+/* FIM INTEGRANTES  */
+
+/* INICIO EVENTO */
+.evento {
+  margin-top: 20%;
+}
+.evento h2 {
+  font-size: 1.3rem;
+}
+.evento .sobre-evento {
+  gap: 5px;
+}
+.evento .sobre-evento p {
+  font-size: 1.2rem;
+}
+
+.sobre-evento img {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+}
+/* FIM EVENTO */
+
+/* INICIO FOOTER */
+footer {
+  margin-top: 20%;
+}
+.container-footer {
+  align-items: center;
+}
+.container-footer .contatos {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.container-footer .contatos p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.container-footer .contatos iframe {
+  width: 200px;
+  height: 200px;
+}
+.container-footer {
+  flex-direction: column;
+  gap: 20px;
+}
+.container-footer .logo-footer img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+}
+
+@media (max-width: 375px) {
+  /* INICO SOBRE LINE */
+  .sobre-line {
+    margin-top: 20%;
+  }
+  .sobre-line h2 {
+    font-size: 1.1rem;
+  }
+  .sobre-line p {
+    font-size: 1rem;
+  }
+  /* INICIO CARROSEL */
+  .carrossel {
+    position: relative;
+    min-width: 10rem;
+    margin-top: 9rem;
+    max-width: 25rem;
+    max-height: 30rem;
+    overflow: hidden;
+  }
+
+  /* FIM CARROSEL*  */
+  /* INICIO INTEGRANTES */
+  .integrantes {
+    margin-top: 20%;
+  }
+  .integrantes h2 {
+    font-size: 1.1rem;
+  }
+  .card {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .sobre-integrante {
+    margin-top: 0px;
+    gap: 0px;
+    padding-top: 0px;
+  }
+  .card .foto-integrante img {
+    width: 100px;
+    height: 100px;
+  }
+  .sobre-integrante h2 {
+    font-size: 1.1rem;
+  }
+  .sobre-integrante p {
+    min-width: 90%;
+    font-size: 1rem;
+  }
+  /* FIM INTEGRANTES */
+
+  /* INICIO EVENTO */
+  .evento .sobre-evento p {
+    font-size: 1rem;
+  }
+  /* FIM EVENTO */
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="src/images/iconFuria.png" type="image/x-icon" />
+    <!-- LINKS CSS -->
+    <link rel="stylesheet" href="src/css/style.css" />
+    <!-- LINKS RESPONSIVO -->
+    <link
+      rel="stylesheet"
+      href="src/responsivo/css/mobile.css"
+      media="screen and (max-width: 430px)"
+    />
+    <link
+      rel="stylesheet"
+      href="src/responsivo/css/tablet.css"
+      media="screen and (min-width: 431px) and (max-width:767px)"
+    />
+    <link
+      rel="stylesheet"
+      href="src/responsivo/css/ipad.css"
+      media="screen and (min-width:768px) and (max-width:1179px)"
+    />
+    <link
+      rel="stylesheet"
+      href="src/responsivo/css/notebook.css"
+      media="screen and (min-width:1180px) and (max-width:1920px)"
+    />
+    <link
+      rel="stylesheet"
+      href="src/responsivo/css/style.css"
+      media="screen and (min-width:1920px)"
+    />
+    <title>Furia</title>
+  </head>
+  <body>
+    <!-- CRIANDO NAVBAR -->
+    <header>
+      <!-- CRIANDO CONTAINER NAVBAR -->
+      <div class="container-navbar">
+        <nav>
+          <div class="logos">
+            <a href="#"
+              ><img
+                src="src/images/furianame.png"
+                alt="furia-nome"
+                class="furia-name"
+            /></a>
+            <img src="src/images/6.png" alt="logo-cs-go" class="logo-cs" />
+          </div>
+          <div class="icon-team">
+            <img src="src/images/8.png" alt="icon-furia-navbar" />
+          </div>
+          <div class="social-media">
+            <a href="https://www.instagram.com/furiagg/?hl=en" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://x.com/FURIA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://pt-br.facebook.com/furiagg/events/" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://www.youtube.com/@FURIAgg" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://br.linkedin.com/company/furiagg" target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/send?l=pt&phone=5511945128297&text=Poderia%20me%20ajudar?"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://discord.com/invite/furia" target="_blank"
+              ><i class="fa-brands fa-discord"></i>
+            </a>
+          </div>
+          <!-- INICIO NAVBAR HAMBURGUER -->
+          <div class="mobileMenu" onclick="openMobileMenu()">
+            <i
+              id="menuIcon"
+              class="fa-solid fa-bars icon"
+              style="color: #f5f5f5"
+            ></i>
+          </div>
+        </nav>
+        <div class="menu effect" id="menu">
+          <ul class="options-mobile">
+            <a href="#sobre-line"><li class="option">Sobre Line</li></a>
+            <a href="#integrantes"><li class="option">integrantes</li></a>
+            <a href="#evento"><li class="option">Evento</li></a>
+          </ul>
+        </div>
+        <!-- FIM NAVBAR HAMBURGUER -->
+      </div>
+    </header>
+
+    <!-- CRIANDO CONTAINER GERAL DO SITE -->
+    <div class="container-main">
+      <!-- CRIANDO CARROSEL -->
+      <div class="carrossel">
+        <div class="slides">
+          <img src="src/images/imageCarrossel5.webp" alt="Imagem 1" />
+          <img src="src/images/imageCarrosel2.png" alt="Imagem 2" />
+          <img src="src/images/imageCarrossel6.webp" alt="Imagem 3" />
+        </div>
+        <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+        <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+      </div>
+      <!-- FIM CARROSEL -->
+      <!-- CRIANDO SOBRE A LINE  -->
+      <section class="sobre-line" id="sobre-line">
+        <h2>A LINE MAIS AMADA DO COUNTER - STRIKE</h2>
+
+        <p>
+          Com uma mescla de experiência e talento, a nova line da FURIA promete
+          dominar o cenário global de CS:GO. Liderada por FalleN e complementada
+          por estrelas como KSCERATO e yuurih, a equipe mostra uma combinação de
+          estratégia, agressividade e precisão. Recentemente, conquistaram o
+          quarto lugar no IEM Rio 2024, consolidando sua posição entre as
+          principais equipes do CS:GO internacional e apontando para conquistas
+          ainda maiores no futuro.
+        </p>
+      </section>
+      <!-- FIM SOBRE A LINE  -->
+
+      <!-- CRIANDO CARDS INTEGRANTES -->
+      <section class="integrantes" id="integrantes">
+        <h2>JA CONHECE NOSSOS INTEGRANTES?</h2>
+
+        <div class="card">
+          <div class="foto-integrante">
+            <img src="src/images/1.png" alt="integrante 1" />
+          </div>
+          <div class="sobre-integrante">
+            <h3>FALLEN</h3>
+            <p>
+              Gabriel “FalleN” Toledo, de 32 anos, atua como capitão e AWPer
+              (sniper) da equipe de Counter-Strike da FURIA. Conhecido por seu
+              papel de liderança e vasto conhecimento estratégico, FalleN foi
+              contratado em julho de 2023 com um contrato de dois anos,
+              tornando-se um dos jogadores mais experientes e importantes na
+              formação da equipe.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="foto-integrante">
+            <img src="src/images/2.png" alt="integrante 2" />
+          </div>
+          <div class="sobre-integrante">
+            <h3>KSCERATO</h3>
+            <p>
+              KSCERATO, ou Kaike Cerato, é um dos riflers principais do time de
+              CS da FÚRIA. Ele tem 26 anos e é amplamente reconhecido como um
+              dos melhores jogadores do cenário brasileiro, com grande impacto
+              nas partidas por sua habilidade com rifles e seu posicionamento
+              estratégico
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="foto-integrante">
+            <img src="src/images/3.png" alt="integrante 3" />
+          </div>
+          <div class="sobre-integrante">
+            <h3>YUURIH</h3>
+            <p>
+              Yuri "yuurih" Santos é um dos jogadores mais importantes e de
+              longa data da FURIA no CS, ocupando a posição de rifler, onde ele
+              é responsável por garantir frags e contribuir com um estilo de
+              jogo agressivo e consistente. Ele tem 24 anos e está na equipe
+              desde 2017, tendo sido fundamental em diversas conquistas do
+              tempo.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="foto-integrante">
+            <img src="src/images/4.png" alt="integrante 4" />
+          </div>
+          <div class="sobre-integrante">
+            <h3>CHELO</h3>
+            <p>
+              Marcelo "chelo" Céspedes, de 27 anos, atua como rifler (jogador de
+              rifle) na equipe de CS da FURIA assumindo um papel de destaque no
+              momento desde sua entrada em 2023. Chelo é conhecido por seu
+              estilo agressivo e habilidade de impacto em situações de combate,
+              e traz para a FURIA uma experiência sólida e dinâmica.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="foto-integrante">
+            <img src="src/images/5.png" alt="integrante 5" />
+          </div>
+          <div class="sobre-integrante">
+            <h3>SKULLZ</h3>
+            <p>
+              Felipe “skullz” Medeiros, de 22 anos, é o mais recente reforço da
+              FURIA Esports no CS, tendo sido anunciado em julho de 2024. Ele
+              ocupa a posição de rifler, contribuindo com seu estilo de jogo
+              dinâmico e dinâmico. Antes de se juntar à FURIA, Skullz teve
+              passagens por equipes como Team Liquid e Pain Gaming.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- FIM INTEGRANTES -->
+
+      <!-- INICIO EVENTO RIO -->
+      <section class="evento">
+        <h2>IEM RIO 2024</h2>
+
+        <div class="sobre-evento" id="evento">
+          <p>
+            O IEM Rio 2024 (Intel Extreme Masters Rio 2024) é um dos principais
+            torneios internacionais de Counter-Strike, organizado pela ESL.
+            Realizado no Rio de Janeiro, o evento atrai as melhores equipes de
+            CS.
+          </p>
+          <img src="src/images/eventoRio.avif" alt="imagem do evento" />
+          <p>
+            O time de Counter-Strike da FURIA alcançou recentemente o 4º lugar
+            no IEM Rio 2024, sendo esta a última grande conquista da equipe no
+            cenário competitivo. No IEM Rio, a FURIA derrotou Natus Vincere
+            (NaVi) com um convincente 2 a 0, marcando uma vitória diante da
+            torcida brasileira. Embora tenham chegado às semifinais, o time
+            acabou sendo eliminado antes da final.
+          </p>
+        </div>
+      </section>
+      <!-- FIM EVENTO RIO -->
+
+      <!-- INICIO FOOTER -->
+    </div>
+    <footer>
+      <div class="container-footer">
+        <div class="contatos">
+          <p>SEDE</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.98010173587!2d-46.69733262542026!3d-23.605046563197163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce573480212797%3A0xe690beaa0b4b6531!2sR.%20Sans%C3%A3o%20Alves%20dos%20Santos%20-%20Cidade%20Mon%C3%A7%C3%B5es%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004533-085!5e0!3m2!1sen!2sbr!4v1730089952606!5m2!1sen!2sbr"
+            width="300"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="logo-footer">
+          <img src="src/images/7.png" alt="icon-furia-footer" />
+          <a
+            href="https://www.furia.gg/?srsltid=AfmBOooSQmonzeFRSwOJdeAvUFrEWIHygnhn0yicsI0sPdbPIPdMEI95"
+            target="_blank"
+            ><i class="fa-brands fa-shopify"></i>FURIA</a
+          >
+        </div>
+        <div class="patrocinadores">
+          <p>PATROCINADORES</p>
+          <div class="alinhar-logos">
+            <img src="src/images/cruzeiro.png" alt="patrocinador 1" />
+            <img src="src/images/redbull.png" alt="patrocinador 2" />
+            <img src="src/images/helmanns.png" alt="patrocinador 3" />
+            <img src="src/images/legion.png" alt="patrocinador 4" />
+            <img
+              class="pokerstars"
+              src="src/images/pokerstars.jpg"
+              alt="patrocinador 5"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FIM FOTTER -->
+
+    <!-- LINK JS -->
+    <script src="src/js/script.js"></script>
+    <!-- ICONS FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/1c065add65.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

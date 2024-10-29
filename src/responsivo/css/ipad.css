@@ -1,0 +1,337 @@
+/* CONTAINER GERAL */
+.container-main {
+  padding: 0px 2rem;
+  margin: 0px 150rem 0px 0px;
+  min-width: 100%;
+
+  display: block;
+}
+
+/* INICIO NAVBAR */
+header {
+  padding: 0px;
+  background-color: var(--black);
+  width: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 10;
+}
+nav .icon-team {
+  justify-content: center;
+}
+nav .icon-team img {
+  height: auto;
+  width: 200px;
+  margin-top: 5rem;
+}
+nav .logos {
+  display: flex;
+}
+.logos .furia-name {
+  height: 90px;
+  width: 90px;
+  object-fit: cover;
+}
+.logos .logo-cs {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+nav .social-media i {
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+/* FIM NAVBAR */
+
+/* INICIO NAVBAR HAMBURGUER */
+
+.option:hover {
+  color: var(--primaria);
+}
+
+.menu {
+  display: none;
+}
+.menu .options-mobile {
+  list-style: none;
+}
+.menu .options-mobile a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.mobileMenu {
+  width: 30%;
+  display: none;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+/* FIM NAVBAR HAMBURGUER */
+
+/* INICIO SECAO CARROSEL */
+
+.carrossel {
+  position: relative;
+  min-width: 40rem;
+  max-width: 50rem;
+  max-height: 25rem;
+
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.button {
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+/* FIM CARROSEL */
+
+/* /* INICIO SOBRE LINE   */
+.sobre-line {
+  margin-top: 10%;
+  gap: 10px;
+}
+.sobre-line h2 {
+  font-size: 1.3rem;
+}
+.sobre-line p {
+  font-size: 1.2rem;
+}
+/* FIM SOBRE LINE */
+
+/* INICIO INTEGRANTES */
+.integrantes {
+  margin-top: 10%;
+}
+.integrantes h2 {
+  font-size: 1.3rem;
+}
+.integrantes .card {
+  flex-direction: row;
+}
+.integrantes .card .foto-integrante img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.sobre-integrante {
+  margin-top: 0rem;
+  padding-top: 0rem;
+}
+.integrantes .card .sobre-integrante h3 {
+  font-size: 1.3rem;
+}
+.integrantes .card .sobre-integrante p {
+  font-size: 1.1rem;
+  min-width: 70%;
+  max-width: 80%;
+  line-height: 15px;
+}
+
+/* FIM INTEGRANTES  */
+
+/* INICIO EVENTO */
+.evento {
+  margin-top: 10%;
+}
+.evento h2 {
+  font-size: 1.3rem;
+}
+.evento .sobre-evento {
+  gap: 5px;
+}
+.evento .sobre-evento p {
+  font-size: 1.2rem;
+}
+
+.sobre-evento img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+/* FIM EVENTO */
+
+/* INICIO FOOTER */
+footer {
+  margin-top: 10%;
+}
+
+.container-footer .contatos {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.container-footer .contatos p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.container-footer .contatos iframe {
+  width: 200px;
+  height: 200px;
+}
+.container-footer {
+  gap: 20px;
+}
+.container-footer .logo-footer img {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+}
+
+@media (max-width: 500px) {
+  /* INICIO NAVBAR */
+  nav .logos {
+    display: none;
+  }
+  nav .icon-team {
+    display: none;
+  }
+  nav .social-media {
+    display: none;
+  }
+  /* INICIO NAVBAR HAMBURGUER */
+
+  .option {
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+    color: #939393;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .option:hover {
+    color: var(--primaria);
+  }
+
+  .menu {
+    display: block;
+    width: 100%;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--black);
+    transform: translateX(380px);
+    transition: transform 0.6s ease-in-out;
+  }
+  .menu .options-mobile {
+    list-style: none;
+  }
+  .menu .options-mobile a {
+    text-decoration: none;
+    color: var(--white);
+  }
+
+  .mobileMenu {
+    width: 30%;
+    display: block;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+  /* FIM NAVBAR HAMBURGUER */
+
+  /* INICIO CARROSEL */
+  .carrossel {
+    min-width: 25rem;
+    max-height: 20rem;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .slides {
+    justify-content: center;
+    min-width: 100%;
+  }
+
+  .button {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+  /* FIM CARROSEL */
+
+  /* INICO SOBRE LINE */
+  .sobre-line {
+    margin-top: 20%;
+  }
+  .sobre-line h2 {
+    font-size: 1.1rem;
+  }
+  .sobre-line p {
+    font-size: 1rem;
+  }
+
+  /* INICIO INTEGRANTES */
+
+  .integrantes {
+    margin-top: 20%;
+  }
+  .integrantes h2 {
+    font-size: 1.1rem;
+  }
+  .integrantes .card {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .sobre-integrante {
+    margin-top: 0px;
+    gap: 0px;
+    padding-top: 0px;
+  }
+  .card .foto-integrante img {
+    width: 100px;
+    height: 100px;
+  }
+  .sobre-integrante h2 {
+    font-size: 1.1rem;
+  }
+  .evento .card .sobre-integrante p {
+    min-width: 90%;
+    font-size: 1rem;
+  }
+  /* FIM INTEGRANTES */
+
+  /* INICIO EVENTO */
+  .evento .sobre-evento p {
+    font-size: 1rem;
+    min-width: 100%;
+  }
+  /* FIM EVENTO */
+}
+
+@media (min-width: 900px) {
+  /* INICIO CARROSEL */
+  .carrossel {
+    position: relative;
+    min-width: 50rem;
+    max-width: 65rem;
+    max-height: 25rem;
+    overflow: hidden;
+  }
+  /* FIM CARROSEL */
+}

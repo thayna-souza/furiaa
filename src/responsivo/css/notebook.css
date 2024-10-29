@@ -1,0 +1,249 @@
+/* CONTAINER GERAL */
+.container-main {
+  padding: 0px 2rem;
+  margin: 0px 150rem 0px 0px;
+  min-width: 100%;
+
+  display: block;
+}
+
+/* INICIO NAVBAR */
+header {
+  padding: 0px;
+  background-color: var(--black);
+
+  top: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+nav .icon-team {
+  justify-content: center;
+}
+nav .icon-team img {
+  height: auto;
+  width: 200px;
+  margin-top: 5rem;
+}
+nav .logos {
+  display: flex;
+}
+.logos .furia-name {
+  height: 90px;
+  width: 90px;
+  object-fit: cover;
+}
+.logos .logo-cs {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+nav .social-media i {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+/* FIM NAVBAR */
+
+/* INICIO NAVBAR HAMBURGUER */
+
+.option:hover {
+  color: var(--primaria);
+}
+
+.menu {
+  display: none;
+}
+.menu .options-mobile {
+  list-style: none;
+}
+.menu .options-mobile a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.mobileMenu {
+  width: 30%;
+  display: none;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+/* FIM NAVBAR HAMBURGUER */
+
+/* INICIO SECAO CARROSEL */
+
+.carrossel {
+  position: relative;
+  min-width: 50rem;
+  max-width: 75rem;
+  max-height: 30rem;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.button {
+  font-size: 0.8rem;
+  padding: 10px;
+}
+
+/* FIM CARROSEL */
+
+/* /* INICIO SOBRE LINE   */
+.sobre-line {
+  margin-top: 10%;
+  gap: 10px;
+}
+.sobre-line h2 {
+  font-size: 1.3rem;
+}
+.sobre-line p {
+  font-size: 1.2rem;
+}
+/* FIM SOBRE LINE */
+
+/* INICIO INTEGRANTES */
+.integrantes {
+  margin-top: 10%;
+}
+.integrantes h2 {
+  font-size: 1.3rem;
+}
+.integrantes .card {
+  flex-direction: row;
+  max-width: 90%;
+}
+.integrantes .card .foto-integrante img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.sobre-integrante {
+  margin-top: -4rem;
+  padding-top: 0rem;
+}
+.integrantes .card .sobre-integrante h3 {
+  font-size: 1.3rem;
+}
+.integrantes .card .sobre-integrante p {
+  font-size: 1.2rem;
+  min-width: 70%;
+  max-width: 80%;
+  line-height: 20px;
+}
+
+/* FIM INTEGRANTES  */
+
+/* INICIO EVENTO */
+.evento {
+  margin-top: 10%;
+}
+.evento h2 {
+  font-size: 1.3rem;
+}
+.evento .sobre-evento {
+  gap: 5px;
+}
+.evento .sobre-evento p {
+  font-size: 1.2rem;
+}
+
+.evento .sobre-evento img {
+  min-width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+/* FIM EVENTO */
+
+/* INICIO FOOTER */
+footer {
+  margin-top: 10%;
+  width: 100%;
+}
+.container-footer {
+  align-items: center;
+}
+
+.container-footer .contatos {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.container-footer .contatos p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.container-footer .contatos iframe {
+  width: 200px;
+  height: 200px;
+}
+.container-footer {
+  gap: 20px;
+}
+.container-footer .logo-footer img {
+  width: 90px;
+  height: 110px;
+  object-fit: cover;
+}
+@media (min-width: 1400px) {
+  /* INCIO NAVBAR  */
+  nav {
+    gap: 300px;
+  }
+  /* INICIO SPBRE LINE */
+  .sobre-line h2 {
+    font-size: 1.4rem;
+  }
+  .sobre-line p {
+    font-size: 1.3rem;
+  }
+  /* FIM SOBRE LINE */
+  /* INCICIO CARROSEL */
+  .carrossel {
+    position: relative;
+    min-width: 60rem;
+    max-width: 100rem;
+    max-height: 41rem;
+
+    overflow: hidden;
+  }
+
+  /* INICIO INTEGRANTES */
+
+  .integrantes .card .foto-integrante img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .integrantes .card .sobre-integrante h2 {
+    font-size: 1.6rem;
+  }
+  .integrantes .card .sobre-integrante p {
+    font-size: 1.4rem;
+    line-height: 25px;
+    max-width: 80%;
+  }
+  /* FIM INTEGRANTES */
+  /* INICIO EVENTO */
+  .evento h2 {
+    font-size: 1.4rem;
+  }
+  .evento .sobre-evento p {
+    font-size: 1.3rem;
+  }
+}
