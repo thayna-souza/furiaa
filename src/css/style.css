@@ -329,6 +329,29 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
+
+.social-media-footer {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.social-media-footer a {
+  text-decoration: none;
+  color: #000000;
+}
+.social-media-footer i {
+  background-color: var(--gray);
+  border-radius: 50%;
+  font-size: 1.3rem;
+  padding: 10px;
+  transition: 0.4s ease-in-out all;
+}
+.social-media i:hover {
+  transition: 0.4s ease-in-out all;
+  transform: translateY(-3px);
+  cursor: pointer;
+}
 .contatos,
 .logo-footer,
 .patrocinadores {
@@ -336,11 +359,6 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-}
-
-.container-footer .logo-footer,
-.patrocinadores::after {
-  border-left: 1px solid var(--white);
 }
 
 .contatos p,

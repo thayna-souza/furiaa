@@ -355,6 +355,32 @@ footer {
     font-size: 1rem;
     min-width: 100%;
   }
+  /* FIM EVENTO */
+  /* INICIO FOOTER */
+
+  .social-media-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .social-media-footer a {
+    text-decoration: none;
+    color: #000000;
+  }
+  .social-media-footer i {
+    background-color: var(--gray);
+    border-radius: 50%;
+    font-size: 1.3rem;
+    padding: 10px;
+    transition: 0.4s ease-in-out all;
+  }
+  .social-media i:hover {
+    transition: 0.4s ease-in-out all;
+    transform: translateY(-3px);
+    cursor: pointer;
+  }
+  /* FIM FOOTER */
 }
 @media (min-width: 720px) {
   /* INICIO NAVBAR */
